@@ -1,4 +1,4 @@
-import { TbCheckbox } from "react-icons/tb";
+// import { TbCheckbox } from "react-icons/tb";
 
 const About = () => {
     return (
