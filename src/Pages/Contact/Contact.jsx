@@ -1,25 +1,30 @@
 
- 
 
 
-// import emailjs from '@emailjs/browser';
-// import { useRef } from 'react';
-import { Link } from 'react-router-dom';
+
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+
 
 const Contact = () => {
 
-//     const form = useRef();
+    const form = useRef();
 
-//   const sendEmail = (e) => {
-//     e.preventDefault();
-
-//     emailjs.sendForm('service_udrxgrm', 'template_4z4xmrr', form.current, 'wgsfUVvl02JqRL8xD')
-//       .then((result) => {
-//           console.log(result.text);
-//       }, (error) => {
-//           console.log(error.text);
-//       });
-//   };
+    const sendEmail = (e) => {
+      e.preventDefault();
+      console.log('Form data:', new FormData(form.current));
+      emailjs.sendForm('service_jzvs2dj', 'template_dptm839', form.current, {
+          publicKey: 'g-0E2QqH4U0aUUy5t',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+  };
 
 
     return (
@@ -30,7 +35,7 @@ const Contact = () => {
             
             </div>
 
-            <div className="lg:flex w-11/12 mx-auto my-16" >
+            <div className="lg:flex w-11/12 mx-auto my-10" >
                 <div className="flex-1 lg:p-10" >
                      <div className=' py-10 lg:pl-4 space-y-10 lg:mr-36' >
                         <div className='bg-black text-white rounded-xl p-4  lg:p-6 space-y-4'>
@@ -55,13 +60,22 @@ const Contact = () => {
 
                      </div>
                 </div>
-                <div className="flex-1 " >
+                <div className=" " >
                     <h2 className='text-xl border-b-2 pb-4 font-Poppins font-semibold text-center my-6 mx-4 ' >If you have any porject or need help. Contact me</h2>
             
-                  <div className='flex flex-col border-2 p-6 bg-black rounded-lg'>
-                  <a href="mailto:ashimsarkar5558@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-333333?style=for-the-badge&logo=gmail&logoColor=red" />
-  </a>
+              
+                 <div className='flex-col'>
+                 <form ref={form} onSubmit={sendEmail}>
+      <label>Name</label>
+      <input type="text" name="from_name" />
+      <label>Email</label>
+      <input type="email" name="from_email" />
+      <label>Message</label>
+      <textarea name="message" />
+      <input type="submit" value="Send" />
+
+    </form>
+                 </div>
                    <div className='my-16 flex gap-5'>
                    <a href="https://www.linkedin.com/in/ashim-sarkar-0b22432b5" target="_blank">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank" />
@@ -82,8 +96,7 @@ const Contact = () => {
 
                 </div>
             </div>
-            
-        </div>
+      
     );
 };
 

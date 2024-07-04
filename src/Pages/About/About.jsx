@@ -6,7 +6,7 @@ const About = () => {
             <div className=' lg:flex justify-center items-center space-y-8 ' >
 
             <div className=' '>
-                      <img className=' border-2 border-[#FF6B00] w-64 ml-8 md:ml-0 ' src="../../../public/profile.jpg" alt="" />
+                      <img className=' border-2 border-[#FF6B00] w-64 ml-8 md:ml-0 ' src="https://i.ibb.co/SXpGJvc/profile.jpg" alt="" />
                 </div>
 
 
@@ -34,7 +34,7 @@ const About = () => {
 
                 <div className='flex justify-center' >
 
-                <a href="https://docs.google.com/document/d/1W-VhuA9-hZAqtB17TxN3MAucKmNVUgGRcF-6ZNIvFe4" download>
+                <a href="https://drive.google.com/file/d/10gvtRJulqrqUWDQKFWj4vX7FqsW7ptzp/view" download>
                    
                 <button className='btn  bg-[#FF6B00] text-white hover:bg-[#FF6B00] ' >Download My Resume </button>
                     </a>
