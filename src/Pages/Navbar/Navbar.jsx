@@ -10,6 +10,8 @@ const Navbar = () => {
   <li  className="text-lg" ><a><AnchorLink href='#project'>projects</AnchorLink></a></li>
   <li  className="text-lg" ><a><AnchorLink href='#Contact'>Contact</AnchorLink></a></li>
  
+  <li  className="text-lg" ><a><AnchorLink href='#experience'>Experience</AnchorLink></a></li>
+ 
   
   
   <li className="text-lg " ><a>Blog</a></li>

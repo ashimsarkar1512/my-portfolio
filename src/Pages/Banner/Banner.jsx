@@ -28,7 +28,7 @@ const Banner = () => {
                    <div className='flex justify-center' >
                     
 
-                   <a href="https://docs.google.com/document/d/1W-VhuA9-hZAqtB17TxN3MAucKmNVUgGRcF-6ZNIvFe4" download>
+                   <a href="https://drive.google.com/file/d/10gvtRJulqrqUWDQKFWj4vX7FqsW7ptzp/view" download>
                    
                 <button className='btn  bg-[#FF6B00] text-white hover:bg-[#FF6B00] ' >Download My Resume </button>
                     </a>
@@ -40,7 +40,7 @@ const Banner = () => {
                 </div>
                 <div className=' flex-1' >
                     <div className=' pl-32 pt-2  md:pt-0 lg:pl-48  ' >
-                    <img className=' w-48 md:w-96 border-2 rounded-xl md:rounded-full bg-[#FF6B00]'  src="../../../public/profile.jpg" alt="" />
+                    <img className=' w-48 md:w-96 border-2 rounded-xl md:rounded-full bg-[#FF6B00]'  src="https://i.ibb.co/SXpGJvc/profile.jpg" alt="" />
                     </div>
                    
                 </div>
